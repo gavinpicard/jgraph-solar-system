@@ -529,7 +529,7 @@ int main(int argc, char **argv)
     FILE *fp;
 
     if (moon_arg) {
-      /* ---------- Moon view ---------- */
+      /* Moon view */
       MoonSystem *ms = find_moon_system(moon_arg);
       if (!ms) {
         fprintf(stderr, "No moon data for '%s'.\n"
@@ -579,7 +579,7 @@ int main(int argc, char **argv)
       }
 
     } else {
-      /* ---------- Solar system view ---------- */
+      /* Solar system view */
       Body planets[NUM_PLANETS];
       memcpy(planets, planets_template, sizeof(planets));
 

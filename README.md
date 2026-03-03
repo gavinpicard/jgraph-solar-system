@@ -1,12 +1,8 @@
 # Solar System Visualizer
 
-An overhead view of the solar system (or a planet's moons) rendered with
-[Jgraph](https://web.eecs.utk.edu/~jplank/plank/classes/cs494/494/notes/Jgraph/lecture.html).
-Planet and moon positions are fetched in real-time from NASA's
-[JPL Horizons API](https://ssd.jpl.nasa.gov/horizons/), so every image
-reflects actual celestial positions.
+An overhead view of the solar system (or a planet's moons) rendered with Jgraph Planet and moon positions are fetched in real-time from NASA's [JPL Horizons API](https://ssd.jpl.nasa.gov/horizons/), so every image reflects actual celestial positions.
 
-Orbits are drawn at evenly-spaced radii for visual clarity — only the
+Orbits are drawn at evenly-spaced radii for visual clarity. Only the
 angular positions are astronomically accurate.
 
 ## Examples
@@ -16,6 +12,8 @@ angular positions are astronomically accurate.
 | `solar_system.jpg` | Static snapshot of all 8 planets |
 | `jupiter_moons.jpg` | Io, Europa, Ganymede, Callisto around Jupiter |
 | `saturn_moons.jpg` | 7 major moons around Saturn |
+| `birthday.jpg` | Solar system on my birthday |
+| `earth_moon.jpg` | Earth's sole moon |
 | `solar_system_anim.gif` | 1-year animation of the solar system (52 frames) |
 | `jupiter_moons_anim.gif` | 18-day animation of Jupiter's Galilean moons |
 
@@ -30,7 +28,8 @@ angular positions are astronomically accurate.
 
 ```bash
 make              # compile the program
-make images       # compile + generate all 5 images
+make images       # compile + generate 5 images
+make gifs         # compile + generate 2 gifs
 make clean        # remove binary and all generated files
 ```
 

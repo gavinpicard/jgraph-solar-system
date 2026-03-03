@@ -34,7 +34,7 @@ earth_moon.jpg: solar_system
 	./solar_system -m earth -o $@
 
 birthday.jpg: solar_system
-	./solar_system -d 2004-04-15 -o $@
+	./solar_system 2004-04-15 -o $@
 
 
 # --- Animations ---
